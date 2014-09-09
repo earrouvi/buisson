@@ -1,0 +1,17 @@
+<div id="linksMenu">
+	<label ng-class="{ 'active': showHome }" ng-click="showBlock(0)">Accueil</label>
+	<label ng-class="{ 'active': showWhatHappened }" ng-click="showBlock(1)">Ce qui s'est pass&eacute;</label>
+	<label ng-class="{ 'active': showContact }" ng-click="showBlock(2)">Laisser un mot</label>
+</div>
+
+<div id="home" ng-show="showHome" class="contentBlock">
+	<p>Blablablabla y'a beaucoup de texte ici mais &ccedil;a ne se voit pas encore.</p>
+</div>
+
+<div id="home" ng-show="showWhatHappened" class="contentBlock">
+	<p>what happened</p>
+</div>
+
+<div id="home" ng-show="showContact" class="contentBlock">
+	<p>contact : buisson@gmail.com</p>
+</div>

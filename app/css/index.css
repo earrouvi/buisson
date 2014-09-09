@@ -1,0 +1,37 @@
+body {
+	font-size: 1em;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	background-color: #c19e74;
+}
+
+#linksMenu {
+	border-bottom: 1px solid #666;
+	width: 100%;
+	margin: auto;
+	padding: 8px 0;
+	text-align: center;
+}
+
+#linksMenu label {
+	font-size: 1.6em;
+	font-weight: 600;
+	color: #666;
+	text-decoration: none;
+	margin: 4px 8px;
+	border-bottom: 8px solid #d2564a;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+#linksMenu label:hover {
+	opacity: 1;
+}
+
+#linksMenu label.active {
+	opacity: 1;
+}
+
+.contentBlock {
+	width: 80%;
+	margin: auto;
+}
