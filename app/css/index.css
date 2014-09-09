@@ -1,23 +1,26 @@
 body {
 	font-size: 1em;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	background-color: #c19e74;
+	background: url(../images/background.png) no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	margin: 0;
 }
 
 #linksMenu {
-	border-bottom: 1px solid #666;
+	background-color: #525266;
 	width: 100%;
-	margin: auto;
-	padding: 8px 0;
+	padding: 48px 0 8px;
 	text-align: center;
 }
 
 #linksMenu label {
-	font-size: 1.6em;
+	font-size: 2em;
 	font-weight: 600;
-	color: #666;
+	color: #eee;
 	text-decoration: none;
-	margin: 4px 8px;
+	margin: 4px 48px;
+	padding: 0 12px;
 	border-bottom: 8px solid #d2564a;
 	opacity: 0.6;
 	cursor: pointer;
@@ -34,4 +37,9 @@ body {
 .contentBlock {
 	width: 80%;
 	margin: auto;
+}
+
+.contentBlock p {
+	font-size: 1.8em;
+	font-weight: 600;
 }

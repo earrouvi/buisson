@@ -25,7 +25,6 @@ angular.module('controllers')
 
 		$scope.init = function() {
 			$scope.showHome = true;
-			debugger;
 		};
 		$scope.init();
 	}]);
