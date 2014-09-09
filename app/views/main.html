@@ -1,22 +1,27 @@
 <div id="linksMenu">
-	<label ng-class="{ 'active': showHome }" ng-click="showBlock(0)">Accueil</label>
-	<label ng-class="{ 'active': showWhatHappened }" ng-click="showBlock(1)">Ce qui s'est pass&eacute;</label>
-	<label ng-class="{ 'active': showContact }" ng-click="showBlock(2)">Laisser un mot</label>
+	<label ng-class="{ 'active': locationHash == 'home' || locationHash == '' }" ng-click="showBlock(0)">Accueil</label>
+	<label ng-class="{ 'active': locationHash == 'whatHappened' }" ng-click="showBlock(1)">Son cancer</label>
+	<label ng-class="{ 'active': locationHash == 'contact' }" ng-click="showBlock(2)">Laisser un mot</label>
 </div>
 
-<div id="home" ng-show="showHome" class="contentBlock">
-	<p>Charles Stome et son épouse,</p>
-	<p>Jacques Buisson, son mari,</p>
-	<p>Florent, Jérémy et Catherine, ses enfants,</p>
-	<p>Ainsi que toute la famille</p>
-	<p>Ont le regret de vous annoncer le décès de Mme Annie Buisson &agrave; son domicile de L'Houmeau (17) le 3 septembre 2014.</p>
-	<p>La crémation s'est déroulée dans la plus stricte intimité le 10 septembre.</p>
-</div>
+<div class="contentBlock">
+	<div class="background"></div>
 
-<div id="home" ng-show="showWhatHappened" class="contentBlock">
-	<p>what happened</p>
-</div>
+	<div id="home">
+		<p>Jacques Buisson, son mari,</p>
+		<p>Charles Stome, son père, ainsi que son &eacute;pouse Yvonne,</p>
+		<p>Claude Stome, son frère,</p>
+		<p>Florent, J&eacute;r&eacute;my et Catherine, ses enfants,</p>
+		<p>ses petits-enfants ainsi que toute la famille</p>
+		<p>ont la tristesse de vous annoncer le d&eacute;c&egrave;s de <span class="annie">Mme Annie Buisson, n&eacute;e Stome</span>, &agrave; son domicile de L'Houmeau (17) le 3 septembre 2014.</p>
+		<p>La cr&eacute;mation s'est d&eacute;roul&eacute;e dans la plus stricte intimit&eacute; le 10 septembre.</p>
+	</div>
 
-<div id="home" ng-show="showContact" class="contentBlock">
-	<p>contact : buisson@gmail.com</p>
+	<div id="whatHappened">
+		<p>Ici on met un bloc de texte un peu conséquent. Il y aura peut-être plusieurs paragraphes mais ce n'est pas sûr. En tout cas il y aura du texte.</p>
+	</div>
+
+	<div id="contact">
+		<p>Vous pouvez nous contacter &agrave; cette adresse : <a href="mailto:florent.buisson.1987@gmail.com">florent.buisson.1987@gmail.com</a>.</p>
+	</div>
 </div>

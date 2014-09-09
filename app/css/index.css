@@ -1,28 +1,67 @@
 body {
 	font-size: 1em;
-	font-family: 'Source Sans Pro', Arial, sans-serif;
-	background: url(../images/background.png) no-repeat;
-	background-size: 100%;
+	font-family: 'Playball', Arial, sans-serif;
+	background-position: right 60px;
 	background-attachment: fixed;
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
 	margin: 0;
 }
 
+.background {
+	background-color: #eee;
+	opacity: 0.4;
+	width: 52%;
+	height: 1500px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+a {
+	color: #af0000;
+	text-decoration: none;
+}
+
+@media (min-width: 960px) {
+	body {
+		background-size: 120%;
+	}
+}
+@media (max-width: 960px) and (min-width: 500px) {
+	body {
+		background-size: 120%;
+		background-image: url(../images/background_medium.png) no-repeat;
+		font-size: 0.8em;
+	}
+}
+@media (max-width: 500px) {
+	body {
+		background-size: 200%;
+		background-image: url(../images/background_small.png) no-repeat;
+		font-size: 0.5em;
+	}
+}
+
 #linksMenu {
-	background-color: #525266;
+	background-color: #af0000;
 	width: 100%;
-	padding: 48px 0 8px;
+	height: 60px;
 	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
 }
 
 #linksMenu label {
 	font-size: 2em;
 	font-weight: 600;
 	color: #eee;
+	border-bottom: 12px solid #ffa500;
 	text-decoration: none;
-	margin: 4px 48px;
-	padding: 0 12px;
-	border-bottom: 8px solid #d2564a;
 	opacity: 0.6;
+	margin: 4px 36px;
+	padding: 7px 12px;
 	cursor: pointer;
 }
 
@@ -35,11 +74,25 @@ body {
 }
 
 .contentBlock {
-	width: 80%;
-	margin: auto;
+	width: 52%;
+	padding-top: 48px;
 }
 
 .contentBlock p {
 	font-size: 1.8em;
 	font-weight: 600;
+	padding: 0 5%;
+}
+
+.annie {
+	color: #af0000;
+}
+
+#whatHappened {
+	background-color: #1d183b;
+	color: #eee;
+}
+
+#home, #whatHappened, #contact {
+	padding: 24px 0;
 }
