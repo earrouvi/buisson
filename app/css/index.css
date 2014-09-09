@@ -12,7 +12,7 @@ body {
 	background-color: #eee;
 	opacity: 0.4;
 	width: 52%;
-	height: 1500px;
+	height: 2500px;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -82,17 +82,23 @@ a {
 	font-size: 1.8em;
 	font-weight: 600;
 	padding: 0 5%;
+	margin-top: 60px;
 }
 
 .annie {
 	color: #af0000;
 }
 
-#whatHappened {
-	background-color: #1d183b;
-	color: #eee;
+.align-center {
+	text-align: center;
 }
 
-#home, #whatHappened, #contact {
+#cancer {
+	background-color: #1d183b;
+	color: #eee;
+	opacity: 0.8;
+}
+
+#home, #cancer, #contact {
 	padding: 24px 0;
 }

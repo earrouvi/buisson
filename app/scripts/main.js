@@ -8,7 +8,7 @@ angular.module('controllers')
 					$scope.showHome = false;
 					$scope.showWhatHappened = true;
 					$scope.showContact = false;
-					$location.hash('whatHappened');
+					$location.hash('cancer');
 					break;
 				case 2:
 					$scope.showHome = false;

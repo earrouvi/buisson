@@ -1,6 +1,6 @@
 <div id="linksMenu">
 	<label ng-class="{ 'active': locationHash == 'home' || locationHash == '' }" ng-click="showBlock(0)">Accueil</label>
-	<label ng-class="{ 'active': locationHash == 'whatHappened' }" ng-click="showBlock(1)">Son cancer</label>
+	<label ng-class="{ 'active': locationHash == 'cancer' }" ng-click="showBlock(1)">Son cancer</label>
 	<label ng-class="{ 'active': locationHash == 'contact' }" ng-click="showBlock(2)">Laisser un mot</label>
 </div>
 
@@ -8,20 +8,35 @@
 	<div class="background"></div>
 
 	<div id="home">
-		<p>Jacques Buisson, son mari,</p>
-		<p>Charles Stome, son père, ainsi que son &eacute;pouse Yvonne,</p>
-		<p>Claude Stome, son frère,</p>
-		<p>Florent, J&eacute;r&eacute;my et Catherine, ses enfants,</p>
-		<p>ses petits-enfants ainsi que toute la famille</p>
-		<p>ont la tristesse de vous annoncer le d&eacute;c&egrave;s de <span class="annie">Mme Annie Buisson, n&eacute;e Stome</span>, &agrave; son domicile de L'Houmeau (17) le 3 septembre 2014.</p>
-		<p>La cr&eacute;mation s'est d&eacute;roul&eacute;e dans la plus stricte intimit&eacute; le 10 septembre.</p>
+		<p>Jacques Buisson, son mari,
+		<br/>Charles Stome, son père, ainsi que son &eacute;pouse Yvonne,
+		<br/>Claude Stome, son frère,
+		<br/>Florent, J&eacute;r&eacute;my et Catherine, ses enfants,
+		<br/>ses six petits-enfants ainsi que toute la famille</p>
+
+		<p class="align-center">ont la tristesse de vous annoncer le d&eacute;c&egrave;s de</p>
+		<p class="align-center"><span class="annie">Mme Annie Buisson, n&eacute;e Stome</span></p>
+		<p class="align-center">&agrave; son domicile de L'Houmeau (17) le 3 septembre 2014.</p>
+		<p class="align-center">La cr&eacute;mation s'est d&eacute;roul&eacute;e dans la plus stricte intimit&eacute; le 10 septembre et ses cendres ont &eacute;t&eacute; dispers&eacute;es.</p>
 	</div>
 
-	<div id="whatHappened">
-		<p>Ici on met un bloc de texte un peu conséquent. Il y aura peut-être plusieurs paragraphes mais ce n'est pas sûr. En tout cas il y aura du texte.</p>
+	<div id="cancer">
+		<p>Fin 2009, suite &agrave; une radio, une tache sombre a &eacute;t&eacute; d&eacute;tect&eacute;e dans les poumons d'Annie. Il s'agissait d'une tumeur maligne dans un lobe inf&eacute;rieur des poumons.
+		Elle a donc subi une ablation de pr&egrave;s d'un tiers du poumon, mais elle avait r&eacute;ussi &agrave; reprendre la fl&ucirc;te ensuite !</p>
+		<p>Nous la pensions gu&eacute;rie quand fin 2012 elle a &eacute;t&eacute; prise de troubles de la vision dus &agrave; une nouvelle tumeur dans le cerveau issue de celle du poumon.</p>
+		<p>Puis deux op&eacute;rations et radioth&eacute;rapies nous ont &agrave; chaque fois redonn&eacute; de l'espoir. Lors d'un contr&ocirc;le d&eacute;but ao&ucirc;t, les m&eacute;decins ont d&eacute;tect&eacute; que le cancer s'&eacute;tait propag&eacute; dans les m&eacute;ninges, et se sont trouv&eacute;s impuissants.</p>
 	</div>
 
 	<div id="contact">
-		<p>Vous pouvez nous contacter &agrave; cette adresse : <a href="mailto:florent.buisson.1987@gmail.com">florent.buisson.1987@gmail.com</a>.</p>
+		<p>Connaissant l'esprit rationnel et pragmatique d'Annie, nous sommes certains qu'elle aurait pr&eacute;f&eacute;r&eacute; que vous manifestiez votre affection par un don &agrave; la recherche contre le cancer plut&ocirc;t que par des fleurs.
+		<br/>Vous pouvez donner &agrave; cette adresse :</p>
+		<p class="align-center"><a href="https://www.ligue-cancer.net/faire_un_don/en_ligne">https://www.ligue-cancer.net/faire_un_don/en_ligne</a></p>
+
+		<p>Si vous voulez nous exprimer vos condol&eacute;ances, vous pouvez nous &eacute;crire un mail &agrave; 
+		<p class="align-center"><a href="mailto:florent.buisson.1987@gmail.com">florent.buisson.1987@gmail.com</a></p>
+		<p>ou un courrier &agrave;</p>
+		<p class="align-center annie">Famille Buisson
+		<br/>8 rue des Pins
+		<br/>17137 L'Houmeau</p>
 	</div>
 </div>
